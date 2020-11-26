@@ -1,5 +1,6 @@
 header, nav, main, footer,div#hamburger {
-        display:none;
+        display:block;
+        height: auto;
 }
  div#pageWrapper {
     grid-template-areas:
@@ -26,6 +27,14 @@ nav ul li {
 }
 
 /*----------- MAIN --------------*/
+main {
+        grid-area: content;
+        padding: 0 2%;
+        min-height: 10rem;
+        background-color: #b8ddff;
+        h1 {margin: 0; padding: 1rem 0 0 0;}
+        p {margin: 0; padding: .5rem 0;}
+    }
 img {
         border-style: none;
         width: 5%;

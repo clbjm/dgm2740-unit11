@@ -40,7 +40,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -74,7 +75,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -206,7 +208,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -237,7 +240,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -310,7 +314,6 @@ html {
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -353,11 +356,15 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 nav ul li {
-  flex-basis: 100%; }
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
 
 nav ul li a {
   display: block;
@@ -422,9 +429,8 @@ footer {
   a.myjump {
     display: none; }
 
-  nav {
-    height: auto;
-    float: right; }
+  nav ul {
+    margin-right: 100%; }
 
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }
@@ -443,7 +449,8 @@ footer {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   nav ul li {
-    flex-basis: auto; }
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto; }
     nav ul li a {
       padding: .6rem 1rem; }
 
