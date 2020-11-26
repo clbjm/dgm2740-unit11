@@ -71,7 +71,8 @@ sup {
 }
 
 img {
-    border-style: none
+    border-style: none;
+    width: 5%;
 }
 
 button,

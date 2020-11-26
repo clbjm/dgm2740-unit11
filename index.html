@@ -17,10 +17,11 @@
 <body>
 <div id="pageWrapper">
 <!-- HEADER HERE -->
-<img src="/images/logo.png" alt="logo">
-	<header>
+
+	<header class="clearfix">
         <h1>TechWatch</h1>
         <h2>your one stop shop for all watches</h2>
+        <img src="images/logo.png" alt="logo">
     </header>
 
     
@@ -45,14 +46,14 @@
         <h1>tablets new to the market</h1>
 
         <h3>iPad</h3>
-        <img src="images\test.jpg">
+        <img src="images/test.jpg" alt="ipad">
         <p>Competently deliver standardized benefits rather than unique supply
         chains. Distinctively architect competitive process improvements
         through focused interfaces. Progressively administrate go forward ebusiness after parallel action items. Proactively revolutionize crossplatform value via frictionless total linkage. Conveniently productize
         best-of-breed process improvements after interoperable metaservices.</p>
 
         <h3>iPhone</h3>
-        <img src="images\test2.jpg">
+        <img src="images/test2.jpg" alt="iphone">
         <p>Dramatically synergize top-line partnerships without dynamic metaservices. Intrinsicly fashion best-of-breed synergy via efficient
             networks. Continually architect functionalized materials without
             prospective internal or "organic" sources. Conveniently mesh flexible
@@ -61,7 +62,7 @@
             products.</p>
         
         <h3>iPad Pro</h3>
-        <img src="images\test3.jpg">
+        <img src="images/test3.jpg" alt="ipad pro">
         <p>Engage customized internal or "organic" sources vis-a-vis extensible
             infomediaries. Credibly target out-of-the-box value after processcentric benefits. Intrinsicly syndicate holistic intellectual capital via
             cutting-edge infomediaries. Holisticly transform prospective
@@ -81,5 +82,26 @@
     </div>
     
     </div>
+
+    <script type="application/ld+json">
+        {
+        "@context":"https://schema.org",
+        "@type":"localbusiness",
+        "image":"https://www.medicalcountermeasures.gov/assets5/img/logo_blue.png",
+        "name":"medical counter measures",
+        "address":{
+        "type":"postaladdress",
+        "streetaddress":"someaddress",
+        "addresslocality":"utah",
+        "addressregion":"UT",
+        "postalcode":"somezipcode",
+        "addresscountry":"US"
+        },
+        "url":"https://www.medicalcountermeasures.gov/",
+        "telephone":"somephonenumber",
+        "pricerange":"pleasecall",
+        "openinghours":"Mo-FR 9:00-15:00"
+        }
+        </script>
 </body>
 </html>

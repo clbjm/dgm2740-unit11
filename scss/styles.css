@@ -378,6 +378,7 @@ nav ul li.active a {
 
 /*----------- HAMBURGER --------------*/
 div#hamburger {
+  display: none;
   grid-area: hamburger;
   background-color: #feff98; }
 
@@ -393,6 +394,9 @@ main {
   main p {
     margin: 0;
     padding: .5rem 0; }
+
+img {
+  width: 5%; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -418,11 +422,9 @@ footer {
   a.myjump {
     display: none; }
 
-  div.hamburger {
-    display: none; }
-
   nav {
-    height: auto; }
+    height: auto;
+    float: right; }
 
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }
@@ -445,10 +447,12 @@ footer {
     nav ul li a {
       padding: .6rem 1rem; }
 
-  div#myjump {
-    display: none; }
-
   /*----------- MAIN --------------*/
+  img {
+    border-style: none;
+    width: 5%;
+    float: none; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 
