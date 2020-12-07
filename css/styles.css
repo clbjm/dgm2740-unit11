@@ -401,10 +401,6 @@ main {
   main p {
     margin: 0;
     padding: .5rem 0; }
-
-img {
-  width: 5%; }
-
 /*----------- FOOTER --------------*/
 footer {
   grid-area: footer;
@@ -422,6 +418,15 @@ footer {
   div#pageWrapper {
     grid-template-areas: "header header" "navigation content" "footer footer";
     grid-template-columns: 150px auto; }
+    img.ipadPro {
+      float: right;
+    }
+    img.iphone  {
+      float: left;
+    }
+    img.ipad {
+      float: right;
+    }
 
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
@@ -445,7 +450,15 @@ footer {
     grid-template-columns: auto;
     max-width: 64rem;
     margin: auto; }
-
+    img.ipadPro {
+      float: right;
+    }
+    img.iphone  {
+      float: left;
+    }
+    img.ipad {
+      float: right;
+    }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
@@ -467,11 +480,6 @@ footer {
     main p {
       margin: 0;
       padding: .5rem 0; }
-
-  img {
-    border-style: none;
-    width: 5%;
-    float: none; }
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */
