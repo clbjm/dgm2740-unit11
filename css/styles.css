@@ -330,7 +330,7 @@ body {
 header {
   grid-area: header;
   padding: .5rem 2%;
-  background-color: #ffa8f0; }
+  background-color: #181818; }
   header h1 {
     margin: 0; }
   header h2 {
